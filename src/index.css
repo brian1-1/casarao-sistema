@@ -1,0 +1,33 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --brand: #C0451A;
+  --gold: #D4A017;
+  --bg: #F5F0EB;
+  --sidebar: #1C1C1A;
+  --text: #1C1C1A;
+  --muted: #7A7570;
+  --muted2: #A89990;
+  --card: #ffffff;
+  --border: rgba(0,0,0,0.09);
+  --green: #2E9E60;
+  --red: #C0351A;
+  --amber: #E8A020;
+  --blue: #185FA5;
+  --panel-bg: #2A2420;
+  --panel-text: #F0EAE3;
+  --panel-muted: #A89990;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font-family: inherit; cursor: pointer; }
+input  { font-family: inherit; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.18); border-radius: 4px; }

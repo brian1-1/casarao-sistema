@@ -1,0 +1,66 @@
+.home {
+  min-height: 100vh;
+  background: var(--sidebar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  gap: 40px;
+}
+
+.home-header { text-align: center; }
+.home-logo { display: flex; align-items: center; gap: 16px; justify-content: center; }
+.home-logo-box {
+  width: 52px; height: 52px;
+  background: var(--brand);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 24px; font-weight: 800;
+}
+.home-title { font-size: 28px; font-weight: 800; color: #F0EAE3; text-transform: uppercase; letter-spacing: 0.04em; }
+.home-sub { font-size: 11px; color: #6A6460; text-transform: uppercase; letter-spacing: 0.12em; margin-top: 4px; }
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  gap: 16px;
+}
+
+.module-card {
+  background: #242420;
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: background 0.15s, border-color 0.15s;
+  position: relative;
+}
+.module-card:hover {
+  background: #2C2C28;
+  border-color: rgba(192,69,26,0.4);
+}
+.module-icon { font-size: 28px; color: var(--brand); margin-bottom: 4px; }
+.module-label { font-size: 15px; font-weight: 800; color: #F0EAE3; text-transform: uppercase; letter-spacing: 0.06em; }
+.module-desc { font-size: 11px; color: #6A6460; line-height: 1.5; }
+.module-arrow { position: absolute; top: 20px; right: 20px; font-size: 18px; color: #3A3A38; }
+.module-card:hover .module-arrow { color: var(--brand); }
+
+.home-footer { font-size: 10px; color: #3A3A38; text-align: center; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* ── Back button shared ── */
+.back-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: none; border: none; padding: 4px 0;
+  font-size: 11px; font-weight: 700; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  transition: color 0.15s;
+}
+.back-btn:hover { color: var(--brand); }
+
+@media (max-width: 640px) {
+  .home-grid { grid-template-columns: 1fr; }
+}
